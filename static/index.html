@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="/static/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="user_form">
+        <h1 id="title_form">create user</h1>
+
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          required
+          autocomplete="off"
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="name@gmail.com"
+          autocomplete="off"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter password"
+          required
+          autocomplete="off"
+          min="8"
+        />
+
+        <button type="submit" id="button">CREATE USER</button>
+      </form>
+      <div class="container-users" id="users_list">
+        <h2>Users</h2>
+        
+      </div>
+      <!-- Items -->
+    </div>
+    <script src="/static/main.js"></script>
+  </body>
+</html>

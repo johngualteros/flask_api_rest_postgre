@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #f5f5f5;
+}
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding:20px 0;
+}
+form,.container-users{
+    width: 30%;
+    height: auto;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:rgb(10, 12, 27);
+    margin-bottom: 5px;
+    font-size: 3rem;
+}
+input,label{
+    width: 100%;
+    margin: 5px;
+}
+label{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+input{
+    outline:none;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    color:rgb(10, 12, 27);
+    font-weight: bold;
+    background-color: transparent;
+}
+input:focus{
+    border-bottom: 2px solid rgb(39, 53, 175);
+    transition: all 0.3s ease-in-out;
+}
+::placeholder{
+    color: rgb(39, 53, 175);
+}
+#button{
+    margin:5px;
+    width: 100%;
+    padding:10px 0px;
+    color:#ffF;
+    background: rgb(39, 53, 175);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container-users{
+    background-color: rgb(10, 12, 27);
+    color: #fff;
+    border-radius: 10px;
+}
+.user{
+    width: 80%;
+    height: auto;
+    min-height: 100px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    color:#ddd;
+    padding:10px;
+    margin: 5px;
+}
+.user h4{
+    text-align: center;
+}
+.container-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.edit,.delete{
+    color:#141414;
+    width: 50%;
+    padding:5px 0;
+    background-color: rgb(105, 198, 252);
+    border: none;
+    border-radius: 5px;
+    margin:5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete{
+    background-color: rgb(255, 75, 75);
+}
+@media (max-width:900px){
+    form,.container-users{
+        width: 70%;
+    }
+}
+@media (max-width:600px){
+    form,.container-users{
+        width: 90%;
+    }
+}
+@media (max-width:400px){
+    form,.container-users{
+        width: 95%;
+    }
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
